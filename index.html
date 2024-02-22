@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #E5E5E5; /* Light Gray */
+            background: linear-gradient(to bottom, #E5E5E5, #FFFFFF);
             color: #2C3E50;
             display: flex;
             flex-direction: column;
@@ -17,14 +17,14 @@
         }
 
         header {
-            background-color: #1E5120; /* Dark Forest Green */
+            background-color: #1E5120;
             color: white;
             text-align: center;
             padding: 1em;
         }
 
         nav {
-            background-color: #2C3E50; /* Darker Forest Green */
+            background-color: #2C3E50;
             padding: 1em;
             text-align: center;
         }
@@ -35,21 +35,21 @@
             padding: 0.5em 1em;
             margin: 0 1em;
             font-weight: bold;
+            transition: background-color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2C3E50;
+        }
+
+        nav a.active {
+            border-bottom: 3px solid white;
         }
 
         main {
             flex: 1;
             padding: 2em;
-            text-align: center; /* Center the content within the main section */
-        }
-
-        main img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1em;
-            display: block;
-            margin: 0 auto; /* Center the image */
+            text-align: center;
         }
 
         main video {
@@ -58,11 +58,11 @@
             border-radius: 8px;
             margin-bottom: 1em;
             display: block;
-            margin: 0 auto; /* Center the video */
+            margin: 0 auto;
         }
 
         footer {
-            background-color: #1E5120; /* Dark Forest Green */
+            background-color: #1E5120;
             color: white;
             text-align: center;
             padding: 1em;
@@ -75,13 +75,12 @@
         <h1>Beautiful Places to Visit In Washington State</h1>
     </header>
 
-     <nav>
-        <a href="index.html">Home</a>
+    <nav>
+        <a href="index.html" class="active">Home</a>
         <a href="content.html">Mountains</a>
     </nav>
 
     <main>
-        <!-- Update the video path below -->
         <video controls>
             <source src="Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -96,4 +95,3 @@
 
 </body>
 </html>
-
