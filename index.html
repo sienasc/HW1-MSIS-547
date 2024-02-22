@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #E5E5E5; /* Light Gray */
+            background: linear-gradient(to bottom, #E5E5E5, #FFFFFF); /* Gradient background */
             color: #2C3E50;
             display: flex;
             flex-direction: column;
@@ -35,21 +35,17 @@
             padding: 0.5em 1em;
             margin: 0 1em;
             font-weight: bold;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        nav a:hover {
+            background-color: #2C3E50; /* Darker background on hover */
         }
 
         main {
             flex: 1;
             padding: 2em;
             text-align: center; /* Center the content within the main section */
-        }
-
-        main img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1em;
-            display: block;
-            margin: 0 auto; /* Center the image */
         }
 
         main video {
@@ -83,7 +79,8 @@
     <main>
         <!-- Update the video path below -->
         <video controls>
-            <source src="Video.mp4" type="video/mp4">
+            <source src="Img/Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
         <h2>Welcome to our nature-inspired guide!</h2>
         <p>Explore the beauty of Washington State, from majestic mountains to lush forests and serene beaches. Plan your next adventure and discover the wonders of nature.</p>
