@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Places to Visit In Washington State</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to the external CSS file -->
     <style>
-        /* Your existing styles here */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #E5E5E5, #FFFFFF);
+            background: linear-gradient(to bottom, #E5E5E5, #FFFFFF); /* Gradient background */
             color: #2C3E50;
             display: flex;
             flex-direction: column;
@@ -19,22 +17,35 @@
         }
 
         header {
-            background-color: #1E5120;
+            background-color: #1E5120; /* Dark Forest Green */
             color: white;
             text-align: center;
             padding: 1em;
         }
 
         nav {
-            background-color: #2C3E50;
+            background-color: #2C3E50; /* Darker Forest Green */
             padding: 1em;
             text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        nav a:hover {
+            background-color: #2C3E50; /* Darker background on hover */
         }
 
         main {
             flex: 1;
             padding: 2em;
-            text-align: center;
+            text-align: center; /* Center the content within the main section */
         }
 
         main video {
@@ -43,11 +54,11 @@
             border-radius: 8px;
             margin-bottom: 1em;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto; /* Center the video */
         }
 
         footer {
-            background-color: #1E5120;
+            background-color: #1E5120; /* Dark Forest Green */
             color: white;
             text-align: center;
             padding: 1em;
@@ -60,12 +71,13 @@
         <h1>Beautiful Places to Visit In Washington State</h1>
     </header>
 
-    <nav>
-        <a href="index.html" class="active">Home</a>
+     <nav>
+        <a href="index.html">Home</a>
         <a href="content.html">Mountains</a>
     </nav>
 
     <main>
+        <!-- Update the video path below -->
         <video controls>
             <source src="Img/Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
