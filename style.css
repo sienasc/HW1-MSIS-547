@@ -1,12 +1,13 @@
 /* Add styles for navigation */
 nav a {
-    color: white;
+    color: white !important; /* Add !important to override any other styles */
     text-decoration: none;
     padding: 0.5em 1em;
     margin: 0 1em;
     font-weight: bold;
-    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    transition: background-color 0.3s ease;
 }
+
 
 nav a:hover {
     background-color: #2C3E50;
