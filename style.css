@@ -17,3 +17,14 @@ nav a.active {
     border-bottom: 3px solid white !important; /* Add !important if needed */
 }
 
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    main {
+        padding: 1em;
+    }
+
+    nav a {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+}
